@@ -244,18 +244,20 @@ def btnec():
      b=0
      val = str(c)
      data.set(val)
-   if operator=="/" and b != 0:
-     c = float(a / b)
-     h=""
-     a=c
-     b=0
-     val = str(c)
-     data.set(val)
-   elif b == 0:
+   if operator=="/" :
+     if b != 0:
+      c = float(a / b)
+      h=""
+      a=c
+      b=0
+      val = str(c)
+      data.set(val)
+     else:
        c=str(c)
        c="illegal operations"
        data.set(c)
        c=0
+   
 
 
 
